@@ -1,0 +1,314 @@
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+audio, canvas, iframe, img, svg, video {
+    vertical-align: middle;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.visuallyhidden.focusable:active, .visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.clearfix:before, .clearfix:after {
+    content: " ";
+    /* 1 */
+    display: table;
+    /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print, (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 1.25dppx), (min-resolution: 120dpi) {}
+
+@media print {
+    *, *:before, *:after {
+        background: transparent !important;
+        color: #000 !important;
+        /* Black prints faster:
+                                   http://www.sanbeiji.com/archives/953 */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+    a, a:visited {
+        text-decoration: underline;
+    }
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+    a[href^="#"]:after, a[href^="javascript:"]:after {
+        content: "";
+    }
+    pre, blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+    thead {
+        display: table-header-group;
+    }
+    tr, img {
+        page-break-inside: avoid;
+    }
+    img {
+        max-width: 100% !important;
+    }
+    p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+    }
+    h2, h3 {
+        page-break-after: avoid;
+    }
+}
+
+/* User define */
+
+.all-content-wrapper {
+    display: none;
+}
+
+.activity {
+    display: block;
+}
+
+.active {
+    background: black;
+    border-bottom: 3px solid rgb(196, 18, 18);
+}
+
+.navItem:hover {
+    background: black;
+    cursor: pointer;
+}
+
+.btn-xs {
+    outline: none !important;
+    border: none !important;
+    padding: 4px 10px !important;
+}
+
+.offer {
+    text-align: center !important;
+}
+
+
+.modal-input {
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.modal-input .input-group {
+    height: 40px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+#add_offer_modal .modal-body{
+    padding: 0 !important;
+}
+.form-control {
+    height: 40px;
+}
+
+button {
+    outline: none !important;
+    border: none !important;
+}
+
+#add_offer_modal .modal-dialog{
+    width: 80% !important; 
+}
+
+#add_offer_modal .field{
+    width: 100% !important;
+}
+
+.pl-2{
+    padding-left: 20px;
+}
+.pr-2{
+    padding-right: 20px;
+}
+.px-0{
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+}
+#description{
+    height: 100px;
+    border-color: #ccc;
+    overflow: auto;
+}
+.description-label{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+    color: #777;
+}
+.upload-title span{
+    font-size: 20px !important;
+    font-weight: bold;
+}
+.upload-title{
+    display: flex;
+    justify-content: space-between;
+}
+/* User define End */
+
+* {
+    outline: none;
+}
+
+.form-heading {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 36px;
+    font-weight: bold;
+    margin: 5px;
+}
+
+.application-form {
+    box-sizing: border-box;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    margin: 15px auto;
+    padding: 15px;
+}
+
+.helper-text {
+    font-size: 12px;
+    margin-bottom: 10px;
+    text-align: right;
+}
+
+.field-row {
+    position: relative;
+    width: 100%;
+}
+
+.field-row button{
+    padding: 8px 20px;
+    width: 20%;
+}
+
+.form-label {
+    display: inline-block;
+    font-size: 16px;
+    margin: 0 5px 5px 0;
+    text-align: right;
+    width: 100px;
+}
+
+.field {
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    display: inline-block;
+    font-size: 16px;
+    padding: 10px;
+    margin-bottom: 15px;
+    width: 90%;
+}
+
+.field.field-short {
+    width: 70px;
+}
+
+.message {
+    display: inline-block;
+}
+
+:required+.message::before {
+    font-weight: bold;
+    color: red;
+    content: "* ";
+}
+
+.text-field:focus:required:valid {
+    border: green solid 2px;
+}
+
+.text-field:focus:required:invalid {
+    border: red solid 2px;
+}
+
+.user-name-field:focus:invalid+.message::after {
+    color: red;
+    content: "Please enter your first name";
+}
+
+.tel-field:focus:invalid+.message::after {
+    color: red;
+    content: "Invalid telephone number";
+}
+
+.email-field:focus:invalid+.message::after {
+    color: red;
+    content: "Invalid email address";
+}
